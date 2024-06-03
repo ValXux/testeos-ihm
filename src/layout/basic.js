@@ -6,6 +6,7 @@ const Basic = () => {
     return (
         <>
             <StrictMode>
+                <Header></Header>
                 <Outlet></Outlet>
             </StrictMode>
         </>
