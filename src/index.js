@@ -14,6 +14,9 @@ setTimeout ( () => {
 }, 10);
 
 import Basic from './layout/basic';
+import Main from './main';
+import Aside from './aside';
+import Header from './layout/header';
 
 const router = createBrowserRouter ([
     {
@@ -23,10 +26,16 @@ const router = createBrowserRouter ([
             {
                 path: '',
                 element: <>
-                    <div className="col-md-8">
-                    </div>
-                    <div className="col-md-4">
-
+                <Header></Header>
+                    <div className="container">
+                        <div className='row'>
+                            <div className="col-md-8">
+                                <Main></Main>
+                            </div>
+                            <div className="col-md-4">
+                                <Aside></Aside>
+                            </div>
+                        </div>
                     </div>
                 </>
             },
