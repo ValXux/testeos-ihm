@@ -26,7 +26,7 @@ const router = createBrowserRouter ([
                 path: '',
                 element: <>
                     <div className="container">
-                        <div className='row'>
+                        <div className='row py-5'>
                             <div className="col-md-8">
                                 <Main></Main>
                             </div>
