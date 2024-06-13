@@ -13,9 +13,18 @@ setTimeout ( () => {
     feather.replace();
 }, 10);
 
+/* Log in - Log out */
 import Basic from './layout/basic';
 import Main from './main';
 import Aside from './aside';
+
+/* Home page */
+import BasicHome from './layout/home/Basic-home';
+import Asidebar from './layout/home/asidebar';
+import Info from './layout/home/info';
+
+import HomeMain from './home-main';
+
 
 const router = createBrowserRouter ([
     {
@@ -36,7 +45,19 @@ const router = createBrowserRouter ([
                         </div>
                     </div>
                 </>
-            },
+            }
+        ]
+    },
+    {
+        path: "home",
+        element: <BasicHome />,
+        children: [
+            {
+                path: "",
+                element: <>
+                    <HomeMain></HomeMain>
+                </>
+            }
         ]
     }
 ]);

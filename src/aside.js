@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Aside = () => {
     return <aside className="container">
         <h1 className="text-center">Bienvenidos a ChaskiCode&#40;&#41;</h1>
@@ -16,9 +18,12 @@ const Aside = () => {
             </div>
             <br></br>
             <div className="container text-center">
-                <div className="row">
-                    <button type="submit" class="btn btn-primary col-md-5">Iniciar Sesion</button>
+                <div className="d-flex justify-content-between">
+                    <Link to="/home" class="btn btn-primary "><button type="submit" className="btn">Iniciar Sesion</button></Link>
+                    <button type="submit" class="btn btn-primary col-md-5">Crear Cuenta</button>
+                    
                 </div>
+                <hr></hr>
             </div>
         </form>
     </aside>;

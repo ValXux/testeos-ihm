@@ -3,18 +3,18 @@
         "name": "code-img_1",
         "slug": "code-img_1",
         "description": "Descripcion del code-img_1",
-        "picture": "https://raw.githubusercontent.com/ValXux/testeos-ihm/feature/react/src/data/img/html.png"
+        "picture": "https://raw.githubusercontent.com/ValXux/testeos-ihm/feature/react/src/data/img/1.jpg"
     },
     {
         "name": "code-img_2",
         "slug": "code-img_2",
         "description": "Descripcion del code-img_2",
-        "picture": "https://raw.githubusercontent.com/ValXux/testeos-ihm/feature/react/src/data/img/css.png"
+        "picture": "https://raw.githubusercontent.com/ValXux/testeos-ihm/feature/react/src/data/img/2.jpg"
     },
     {
         "name": "code-img_3",
         "slug": "code-img_3",
         "description": "Descripcion del code-img_3",
-        "picture": "https://raw.githubusercontent.com/ValXux/testeos-ihm/feature/react/src/data/img/js.png"
+        "picture": "https://raw.githubusercontent.com/ValXux/testeos-ihm/feature/react/src/data/img/3.jpg"
     }
 ]
