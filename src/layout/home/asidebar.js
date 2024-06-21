@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Asidebar = () => {
-    return <aside class="col-md-2 d-none d-md-block bg-dark text-white p-4">
+    return <aside class="col-md-2 d-none d-md-block p-4" style={{background:"#B6BCC8"}}>
         <div class="position-fixed">
             <ul class="nav flex-column">
                 <li class="nav-item">
