@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-const NUM_CIRCLES = 10; // Cambia esto para agregar más círculos
+const NUM_CIRCLES = 5; // Cambia esto para agregar más círculos
 
 const HomeMain = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
     const initialProgress = location.state?.progresses || Array(NUM_CIRCLES).fill(0).map((_, i) => (i === 0 ? 25 : 0));
-    const [progresses, setProgresses] = useState(initialProgress);
+    const [progresses] = useState(initialProgress);
 
     const handleButtonClick = (id) => {
         navigate("/home/excercise/" + `${id}`, { state: { progresses } });
@@ -28,7 +28,7 @@ const HomeMain = () => {
                         <div
                             key={i}
                             className="circle-percentage d-flex justify-content-center align-items-center m-3"
-                            style={{ transform: `translate(${offsetX}px` }}
+                            style={{ transform: `translate(${offsetX}px)` }}
                         >
                             <div className="circle-1 d-flex justify-content-center align-items-center">
                                 <button

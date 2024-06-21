@@ -1,7 +1,7 @@
 const Info = () => {
-    return <nav class="col-md-4 d-none d-md-block bg-dark text-white p-4">
+    return <nav class="col-md-4 d-none d-md-block text-white p-4">
         <div class="position-fixed">
-        <h5 class="sidebar-heading">Actions</h5>
+        <h3 class="sidebar-heading text-black">Aqui van cositas xd </h3>
         <ul class="nav flex-column">
             <li class="nav-item">
                 <button class="btn btn-primary mb-2">Button 1</button>
