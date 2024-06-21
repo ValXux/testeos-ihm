@@ -1,6 +1,6 @@
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 
-const Page = () => {
+const Excercise = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     const location = useLocation();
@@ -30,4 +30,4 @@ const Page = () => {
     );
 }
 
-export default Page;
+export default Excercise;

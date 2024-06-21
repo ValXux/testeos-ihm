@@ -8,10 +8,11 @@ import {
     RouterProvider,
 } from "react-router-dom";
 
-const feather = require('feather-icons');
 setTimeout ( () => {
     feather.replace();
 }, 10);
+
+const feather = require('feather-icons');
 
 /* Log in - Log out */
 import Basic from './layout/basic';
@@ -20,11 +21,15 @@ import Aside from './aside';
 
 /* Home page */
 import BasicHome from './layout/home/Basic-home';
-import Asidebar from './layout/home/asidebar';
 import Info from './layout/home/info';
 
+/* Main Bar */
 import HomeMain from './home-main';
-import Page from './page';
+import Profile from './layout/mainBar/profile';
+import Progress from './layout/mainBar/progress';
+import Excercise from './layout/mainBar/excercise';
+import Challenge from './layout/mainBar/challenge';
+import Help from './layout/mainBar/help';
 
 const router = createBrowserRouter ([
     {
@@ -56,11 +61,28 @@ const router = createBrowserRouter ([
                 path: "",
                 element: <>
                     <HomeMain />
+                    <Info></Info>
                 </>
             },
             {
                 path: "excercise/:id",
-                element: <Page />
+                element: <Excercise />
+            },
+            {
+                path: "profile",
+                element: <Profile />
+            },
+            {
+                path: "progress",
+                element: <Progress />
+            },
+            {
+                path: "challenge",
+                element: <Challenge />
+            },
+            {
+                path: "help",
+                element: <Help />
             }
         ]
     }

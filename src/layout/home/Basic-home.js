@@ -16,7 +16,6 @@ const BasicHome = () => {
                     <div class="row">
                         <Asidebar></Asidebar>
                         <Outlet></Outlet>
-                        <Info></Info>
                     </div>
                 </div>
                 <Footer></Footer>

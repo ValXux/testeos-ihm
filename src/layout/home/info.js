@@ -1,5 +1,9 @@
 const Info = () => {
-    return <nav class="col-md-4 d-none d-md-block text-white p-4">
+    return <nav class="col-md-4 d-none d-md-block text-white p-4 bg-dark">
+
+        <i data-feather="star"></i>
+        <i data-feather="heart"></i>
+
         <div class="position-fixed">
         <h3 class="sidebar-heading text-black">Aqui van cositas xd </h3>
         <ul class="nav flex-column">
