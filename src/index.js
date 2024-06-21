@@ -24,7 +24,7 @@ import Asidebar from './layout/home/asidebar';
 import Info from './layout/home/info';
 
 import HomeMain from './home-main';
-
+import Page from './page';
 
 const router = createBrowserRouter ([
     {
@@ -55,8 +55,12 @@ const router = createBrowserRouter ([
             {
                 path: "",
                 element: <>
-                    <HomeMain></HomeMain>
+                    <HomeMain />
                 </>
+            },
+            {
+                path: "excercise/:id",
+                element: <Page />
             }
         ]
     }

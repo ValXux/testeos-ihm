@@ -1,4 +1,56 @@
-.asd {
-    background: red;
-    --bs-columns: 12;
+body {
+    margin-top: 56px;
+}
+
+.circle-percentage {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.circle-1 {
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    width: 100px;
+    height: 80px;
+    background-color: #032261;
+    border-radius: 40% 40% 50% 50%;
+    z-index: 1;
+}
+
+.circle-2 {
+    color: #fff;
+    font-size: 50px;
+    border: none;
+    margin-top: -40px;
+    width: 100px;
+    height: 80px;
+    background-color: #3D5A98;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.circle-2:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.circle-2:hover {
+    margin-top: -20px;
+}
+
+.progress-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.progress-ring__circle {
+    transition: stroke-dashoffset 0.3s ease;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
 }

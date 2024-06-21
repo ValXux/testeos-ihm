@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Asidebar = () => {
     return <aside class="col-md-2 d-none d-md-block bg-dark text-white p-4">
-        <div class="position-sticky">
+        <div class="position-fixed">
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <Link to=""><a className='nav-link'>Inicio</a></Link>

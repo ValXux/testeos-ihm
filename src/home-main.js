@@ -1,14 +1,57 @@
+import React, { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+
+const NUM_CIRCLES = 10; // Cambia esto para agregar más círculos
+
 const HomeMain = () => {
-    return <main class="col-md-8 ms-sm-auto col-lg-8 px-md-4 p-4">
-        <h1 class="h2">Aqui va el titulo xd</h1>
-        <p>Mmmmmmmmmmmm</p>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Progreso</h5>
-                <p class="card-text">Wui</p>
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const initialProgress = location.state?.progresses || Array(NUM_CIRCLES).fill(0).map((_, i) => (i === 0 ? 25 : 0));
+    const [progresses, setProgresses] = useState(initialProgress);
+
+    const handleButtonClick = (id) => {
+        navigate(`/home/excercise/${id}`, { state: { progresses } });
+    };
+
+    return (
+        <main className="col-md-6 ms-sm-auto col-lg-6 px-md-4 p-4">
+            <h1 className="h2">Aquí va el título xd</h1>
+            <div className="principal">
+                {Array.from({ length: NUM_CIRCLES }, (_, i) => (
+                    <div key={i} className="circle-percentage d-flex justify-content-center align-items-center m-3">
+                        <div className="circle-1 d-flex justify-content-center align-items-center">
+                            <button
+                                className="circle-2"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    handleButtonClick(i + 1);
+                                }}
+                                disabled={progresses[i] === 0}
+                            >
+                                {i + 1}
+                            </button>
+                        </div>
+                        <svg className="progress-ring" width="150" height="150">
+                            <circle
+                                className="progress-ring__circle"
+                                stroke="#67728C"
+                                strokeWidth="10"
+                                fill="transparent"
+                                r="65"
+                                cx="75"
+                                cy="75"
+                                style={{
+                                    strokeDasharray: 2 * Math.PI * 65,
+                                    strokeDashoffset: 2 * Math.PI * 65 * (1 - progresses[i] / 100)
+                                }}
+                            />
+                        </svg>
+                    </div>
+                ))}
             </div>
-        </div>
-    </main>
+        </main>
+    );
 }
 
 export default HomeMain;

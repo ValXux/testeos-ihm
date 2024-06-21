@@ -1,6 +1,6 @@
 const Info = () => {
-    return <nav class="col-md-2 d-none d-md-block bg-dark text-white p-4">
-        <div class="position-sticky">
+    return <nav class="col-md-4 d-none d-md-block bg-dark text-white p-4">
+        <div class="position-fixed">
         <h5 class="sidebar-heading">Actions</h5>
         <ul class="nav flex-column">
             <li class="nav-item">
