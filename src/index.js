@@ -31,6 +31,11 @@ import Excercise from './layout/mainBar/excercise';
 import Challenge from './layout/mainBar/challenge';
 import Help from './layout/mainBar/help';
 
+/* Register */
+import Header from './layout/header';
+import Footer from './layout/footer';
+import Register from './register';
+
 const router = createBrowserRouter ([
     {
         path: "/",
@@ -85,7 +90,16 @@ const router = createBrowserRouter ([
                 element: <Help />
             }
         ]
-    }
+    },
+    {
+        path: "register",
+        element: <>
+                <Header></Header>
+                <Register></Register>
+                <Footer></Footer>
+            </>
+    },
+    
 ]);
 
 const root = createRoot(document.getElementById("root"));
