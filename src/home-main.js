@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-const NUM_CIRCLES = 1; // Cambia esto para agregar más círculos
+const NUM_CIRCLES = 10; // Cambia esto para agregar más círculos
 
 const HomeMain = () => {
     const navigate = useNavigate();
