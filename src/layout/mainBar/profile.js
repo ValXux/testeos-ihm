@@ -12,8 +12,6 @@ const Profile = () => {
 
             <i data-feather="heart"></i>
         </div>
-
-        
     </main>
 }
 
