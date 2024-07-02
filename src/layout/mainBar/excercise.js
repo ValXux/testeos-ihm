@@ -24,6 +24,10 @@ const Excercise = () => {
     return (
         <main className="col-md-6 ms-sm-auto col-lg-6 px-md-4 p-4">
             <h1 className="h2">Ejercicio N° {id}</h1>
+            <div className='container'>
+                <img style={{width:"80%", marginLeft:"-180px"}} src='https://disenowebakus.net/imagenes/articulos/estructura-basica-de-una-pagina-web-en-html.jpg'></img>
+            
+            </div>
             <p>Contenido de la página {id}</p>
             <button className="btn btn-primary" onClick={handleFinishClick}>Finalizar</button>
         </main>
