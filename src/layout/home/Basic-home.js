@@ -5,7 +5,6 @@ import Header from "../header";
 import Footer from "../footer";
 
 import Asidebar from "./asidebar";
-import Info from "./info";
 
 const BasicHome = () => {
     return (

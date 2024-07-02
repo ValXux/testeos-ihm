@@ -14,9 +14,6 @@ const Asidebar = () => {
                     <Link to="progress"><a class="nav-link">Progreso</a></Link>
                 </li>
                 <li class="nav-item">
-                    <Link to="challenge"><a class="nav-link">Desafios</a></Link>
-                </li>
-                <li class="nav-item">
                     <Link to="help"><a class="nav-link">Ayuda y Soporte</a></Link>
                 </li>
             </ul>

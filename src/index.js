@@ -82,10 +82,6 @@ const router = createBrowserRouter ([
                 element: <Progress />
             },
             {
-                path: "challenge",
-                element: <Challenge />
-            },
-            {
                 path: "help",
                 element: <Help />
             }

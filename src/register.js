@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Register = () => {
     return <main className="container" style={{top:"50px"}}>
-        <div className="row">
+        <div>
             <div className="m-5">
                 <h1 className="text-center" >Formulario de registro - ChaskiCode&#40;&#41;</h1>
                 <form className="justify-content-center align-items-center m-5">

@@ -87,7 +87,7 @@ const Help = () => {
                         </div>
 
                         <li class="nav-item m-2">
-                            <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapse7" role="button" aria-expanded="false" aria-controls="collapse7">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse7" role="button" aria-expanded="false" aria-controls="collapse7">
                                 ¿Cómo elimino o reinicio un curso?
                             </a>
                         </li>
